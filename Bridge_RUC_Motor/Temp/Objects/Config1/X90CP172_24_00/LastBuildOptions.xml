@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.12"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-02-22 07:32:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ashwac.br&quot; -L &quot;ArCan: V*, AsBrStr: V*, AsCANopen: V*, AsIecCon: V*, astime: V*, operator: V*, runtime: V*, standard: V*&quot; -c &quot;Config1&quot; -Z &quot;FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M ARM -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-02-22 07:32:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;X90CP172_24_00&quot; -Z &quot;FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\sysconf.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-02-22 07:32:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;X90CP172_24_00&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\asfw.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -Z &quot;FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-02-22 07:32:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;X90CP172_24_00&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ashwd.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -Z &quot;FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-02-22 07:32:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\iomap.iom" LastWriteTime="2024-02-21 10:47:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=10.0.0.2 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;X90CP172_24_00&quot; -Z &quot;FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2023-06-02 09:31:52" />
+    <CommandLine Parameter="C:\BrAutomation\AS412\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\iomap.iom" LastWriteTime="2024-02-21 10:47:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\pvmap.vvm" LastWriteTime="2024-02-21 10:41:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2024-02-22 07:32:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\cpu.sw" LastWriteTime="2024-02-21 10:52:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\channelconfiguration.xml" LastWriteTime="2024-02-22 07:33:02" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\iomap.br&quot; -T SG4 -B B4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.X90CP172_24_00&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\brautomation\as412\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2022-05-25 04:28:54" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS412\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\B0493&quot; &quot;C:\BrAutomation\AS412\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata\tcdata.imx" LastWriteTime="2024-02-22 07:33:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata\tcdata.s18d" LastWriteTime="2024-02-22 07:33:04" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\accessandsecurity\userrolesystem\role.role" LastWriteTime="2024-02-21 10:41:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\Role.br&quot; -zip -B B4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\accessandsecurity\userrolesystem\user.user" LastWriteTime="2024-02-21 10:41:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\User.br&quot; -zip -B B4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2024-02-21 10:41:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\FWRules.br&quot; -zip -B B4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\servoctrl.ox" LastWriteTime="2024-02-22 07:32:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\cpu.per" LastWriteTime="2024-02-21 10:41:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\ServoCtrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\X90CP172_24_00\LT.ofs&quot; -T SG4 -M ARM -B B4.93 -G V4.1.2  -extConstants -r Cyclic1 -p 2 -s &quot;ServoCtrl&quot; -L &quot;ArCan: V*, AsBrStr: V*, AsCANopen: V*, AsIecCon: V*, astime: V*, operator: V*, runtime: V*, standard: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\servoctrl.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\a.out" LastWriteTime="2024-02-22 07:32:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\ServoCtrl.ox&quot; -T SG4 -M ARM -r Cyclic1 -G V4.1.2  -B B4.93 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\main.c.o" LastWriteTime="2024-02-22 07:32:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\_bur_pvdef.c.o" LastWriteTime="2024-02-22 07:32:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\Main.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\a.out&quot; -G V4.1.2  -T SG4 -M ARM &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libArCan.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libAsCANopen.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\liboperator.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0493\SG4\Arm\libAsBrStr.a&quot; -specs &quot;C:\BrAutomation\AS412\AS\gnuinst\V4.1.2\4.9\arm-elf\specs\ARMspecs_brelf&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\main.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\servoctrl\main.c" LastWriteTime="2024-02-21 11:01:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\ServoCtrl\Main.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\Main.c.o&quot; -T SG4 -M ARM -B B4.93 -G V4.1.2  -s &quot;ServoCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS412\AS\gnuinst\V4.1.2\4.9\arm-elf\specs\ARMspecs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\ServoCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\ServoCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -ggdb -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\_bur_pvdef.c.o">
+    <Prerequisite ID="c:\brautomation\as412\as\gnuinst\v4.1.2\4.9\arm-elf\include\bur\_bur_pvdef.c" LastWriteTime="2022-05-25 04:28:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\main.c.o" LastWriteTime="2024-02-22 07:32:54" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS412\AS\gnuinst\V4.1.2\4.9\arm-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ServoCtrl\_bur_pvdef.c.o&quot; -T SG4 -M ARM -B B4.93 -G V4.1.2  -s &quot;ServoCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS412\AS\gnuinst\V4.1.2\4.9\arm-elf\specs\ARMspecs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\ServoCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\ServoCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -ggdb -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\arcan.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0493\sg4\arm\arcan.br" LastWriteTime="2022-06-22 07:30:16" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0493\SG4\Arm\ArCan.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\ArCan.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\runtime.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0493\sg4\arm\runtime.br" LastWriteTime="2022-06-22 07:30:16" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0493\SG4\Arm\runtime.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\runtime.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\asbrstr.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0493\sg4\arm\asbrstr.br" LastWriteTime="2022-06-22 07:30:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0493\SG4\Arm\AsBrStr.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\AsBrStr.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\standard.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0493\sg4\arm\standard.br" LastWriteTime="2022-06-22 07:30:16" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0493\SG4\Arm\standard.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\standard.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ascanopen.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0493\sg4\arm\ascanopen.br" LastWriteTime="2022-06-22 07:30:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0493\SG4\Arm\AsCANopen.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\AsCANopen.br" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X90CP172_24_00\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\x90cp172_24_00\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ashwac.br" LastWriteTime="2024-02-22 07:33:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\sysconf.br" LastWriteTime="2024-02-22 07:33:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\asfw.br" LastWriteTime="2024-02-22 07:33:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ashwd.br" LastWriteTime="2024-02-22 07:33:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\arconfig.br" LastWriteTime="2024-02-22 07:33:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\udbdef.br" LastWriteTime="2023-06-02 09:31:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\iomap.br" LastWriteTime="2024-02-22 07:33:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata.br" LastWriteTime="2024-02-22 07:33:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\role.br" LastWriteTime="2024-02-22 07:33:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\user.br" LastWriteTime="2024-02-22 07:33:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\fwrules.br" LastWriteTime="2024-02-22 07:33:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl.br" LastWriteTime="2024-02-22 07:32:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\arcan.br" LastWriteTime="2022-06-22 07:30:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\runtime.br" LastWriteTime="2022-06-22 07:30:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\asbrstr.br" LastWriteTime="2022-06-22 07:30:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\standard.br" LastWriteTime="2022-06-22 07:30:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ascanopen.br" LastWriteTime="2022-06-22 07:30:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x90cp172_24_00\cpu.sw" LastWriteTime="2024-02-21 10:52:18" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\Bridge_RUC_Motor.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\BrAutomation\AS412&quot; -S &quot;X90CP172_24_00&quot; -all -A &quot;X90CP&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\X90CP172_24_00\Cpu.sw&quot; -Z &quot;FMUExport: n.d, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=10.0.0.2 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M ARM -T SG4" />
+  </Rule>
+</RuleSetOptions>

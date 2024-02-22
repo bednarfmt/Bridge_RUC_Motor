@@ -1,0 +1,11 @@
+VAR_CONFIG
+	::ServoCtrl:ServoDriveModuleOK AT %IX."EVE-XCR-C".ModuleOk;
+	::ServoCtrl:IOOperationModeDisplay AT %IW."EVE-XCR-C".OperationModeDisplay_2015;
+	::ServoCtrl:IOControlWord AT %QW."EVE-XCR-C".ControlWord_6040;
+	::ServoCtrl:IOStatusWord AT %IW."EVE-XCR-C".StatusWord_6041;
+	::ServoCtrl:IOOperationMode AT %QB."EVE-XCR-C".OperationMode_6060;
+	::ServoCtrl:IOVelocitySetpoint AT %QD."EVE-XCR-C".VelocitySet_point_60FF;
+	::ServoCtrl:IOActualVelocity AT %ID."EVE-XCR-C".ActualVelocity_606C;
+	::ServoCtrl:VelocityLoopKp AT %QD."EVE-XCR-C".VelocityLoopKp_250A;
+	::ServoCtrl:VelocityLoopKi AT %QD."EVE-XCR-C".VelocityLoopKi_250B;
+END_VAR

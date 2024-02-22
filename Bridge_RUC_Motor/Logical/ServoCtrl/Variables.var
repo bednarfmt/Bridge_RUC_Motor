@@ -1,0 +1,31 @@
+VAR
+	ArCanSetBitTimingRegisters_0 : ArCanSetBitTimingRegisters;
+	SDO : SDO_type := (0);
+	Test : REAL;
+	MaxCurrent : REAL := 14.6; (*[A]*)
+	VelocityLoopKi : REAL := 14;
+	VelocityLoopKp : REAL := 1.5;
+	ProfilerMaxVelocity : REAL := 3; (*[rev/s]*)
+	ProfilerMaxAcc : REAL := 5; (*[rev/s2]*)
+	ProfilerMaxDec : REAL := 5; (*[rev/s2]*)
+	VelocityFeedbackFilter : UDINT := 100;
+	TON_0 : TON;
+	ParamWriteDone : BOOL;
+	SDOWriteWaitTime : TIME := 10000; (*[ms]*)
+	ServoDriveModuleOK : BOOL;
+	IOControlWord : UINT;
+	IOStatusWord : UINT;
+	IOOperationMode : SINT;
+	IOVelocitySetpoint : DINT; (*[mrev/s]*)
+	IOOperationModeDisplay : UINT;
+	IOActualVelocity : DINT; (*[mrev/s]*)
+	SERVO : SERVO_type;
+	mask0 : USINT := 1;
+	mask1 : USINT := 2;
+	mask2 : USINT := 4;
+	mask3 : USINT := 8;
+	mask4 : USINT := 16;
+	mask5 : USINT := 32;
+	mask6 : USINT := 64;
+	mask7 : USINT := 128;
+END_VAR

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\udbdef.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\main.c.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\arconfig.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ashwac.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata\tcdata.imx">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\_bur_pvdef.c.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl\servoctrl.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\servoctrl.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\arcan.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\runtime.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\asbrstr.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\standard.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ascanopen.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata\tcdata.s18d">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\role.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\user.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\fwrules.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\iomap.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\sysconf.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\asfw.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\ashwd.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x90cp172_24_00\tcdata.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\x90cp172_24_00\transfer.lst">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+</BuildReasons>

@@ -1,0 +1,3 @@
+VAR
+	gServoData : ServoData_typ;
+END_VAR
