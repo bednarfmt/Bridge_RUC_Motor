@@ -78,3 +78,9 @@ dkms.conf
 /*.pydio_id
 
 *.isopen
+
+Bridge_RUC_Motor/Temp/
+
+Bridge_RUC_Motor/Diagnosis/
+
+Bridge_RUC_Motor/Binaries/

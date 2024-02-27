@@ -1,9 +1,0 @@
-$(AS_PROJECT_PATH)/Logical/Libraries/ArCan/ArCan.fun
-$(AS_PROJECT_PATH)/Logical/Libraries/AsCANopen/AsCANopen.fun
-$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
-$(AS_PROJECT_PATH)/Logical/Libraries/AsBrStr/AsBrStr.fun
-$(AS_PROJECT_PATH)/Logical/ServoCtrl/Variables.var
-$(AS_PROJECT_PATH)/Logical/ServoCtrl/Types.typ
-$(AS_PROJECT_PATH)/Logical/Global.var
-$(AS_PROJECT_PATH)/Logical/Global.typ
-$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var

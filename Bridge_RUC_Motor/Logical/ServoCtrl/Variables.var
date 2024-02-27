@@ -8,6 +8,8 @@ VAR
 	ProfilerMaxVelocity : REAL := 3; (*[rev/s]*)
 	ProfilerMaxAcc : REAL := 5; (*[rev/s2]*)
 	ProfilerMaxDec : REAL := 5; (*[rev/s2]*)
+	IncrementalEncoderResolution : UDINT := 1048575;
+	VelocityFeedbackType : UDINT := 4;
 	VelocityFeedbackFilter : UDINT := 100;
 	TON_0 : TON;
 	ParamWriteDone : BOOL;

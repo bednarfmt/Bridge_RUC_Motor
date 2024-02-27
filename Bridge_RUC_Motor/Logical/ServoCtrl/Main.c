@@ -22,6 +22,12 @@ BOOL Ready_to_switch_on_disabled_state (void){ // 592
 	return ((IOStatusWord & mask6) && (~IOStatusWord & mask3) && (~IOStatusWord & mask2) && (~IOStatusWord & mask1) && (~IOStatusWord & mask0));
 }
 
+BOOL Fault_state (void){
+
+	return (IOStatusWord & mask3);
+}
+
+
 void _CYCLIC ProgramCyclic(void)
 {
 
@@ -55,7 +61,11 @@ void _CYCLIC ProgramCyclic(void)
 			
 				if (TON_0.Q) {
 					TON_0.IN = 0;
-					SDO.step = SDO_READ;
+			//		SDO.step = SDO_READ;
+			
+					SDO.step = SDO_WAIT_4_CMD;
+					ParamWriteDone = 1;
+			
 				}
 				break;
 			
@@ -166,14 +176,52 @@ void _CYCLIC ProgramCyclic(void)
 				SDO.CANopenSDOWrite8_0.datalen = 4;
 
 				if (SDO.CANopenSDOWrite8_0.status == ERR_OK) { // (* OK *)
-					ParamWriteDone = 1;
-					SDO.step = SDO_WAIT_4_CMD; //(* next step *)
+					SDO.step = SDO_WRITE_2360; //(* next step *)
 				} else if (SDO.CANopenSDOWrite8_0.status == ERR_FUB_BUSY) { // (* FBK not yet finished *)
 					//(* busy *)
 				} else { // (* Error step *)
 					//	SDO.step = 10;
 				}
-				break;				
+				break;	
+		case SDO_WRITE_2360:
+	
+			SDO.CANopenSDOWrite8_0.enable = 1;
+			SDO.CANopenSDOWrite8_0.pDevice = (UDINT) &(SDO.device);
+			SDO.CANopenSDOWrite8_0.node = 32;  //(* Node ID from IO device *)
+			SDO.CANopenSDOWrite8_0.index = 0x2360;
+			SDO.CANopenSDOWrite8_0.subindex = 0x00;
+			brsmemcpy((UDINT) &SDO.CANopenSDOWrite8_0.data0, (UDINT) &VelocityFeedbackType, 4);
+			SDO.CANopenSDOWrite8_0.datalen = 4;
+			
+			if (SDO.CANopenSDOWrite8_0.status == ERR_OK) { // (* OK *)
+				SDO.step = SDO_WRITE_2388; //(* next step *)
+			} else if (SDO.CANopenSDOWrite8_0.status == ERR_FUB_BUSY) { // (* FBK not yet finished *)
+				//(* busy *)
+			} else { // (* Error step *)
+				//	SDO.step = 10;
+			}
+			break;	
+		
+		case SDO_WRITE_2388:
+	
+			SDO.CANopenSDOWrite8_0.enable = 1;
+			SDO.CANopenSDOWrite8_0.pDevice = (UDINT) &(SDO.device);
+			SDO.CANopenSDOWrite8_0.node = 32;  //(* Node ID from IO device *)
+			SDO.CANopenSDOWrite8_0.index = 0x2388;
+			SDO.CANopenSDOWrite8_0.subindex = 0x00;
+			brsmemcpy((UDINT) &SDO.CANopenSDOWrite8_0.data0, (UDINT) &IncrementalEncoderResolution, 4);
+			SDO.CANopenSDOWrite8_0.datalen = 4;
+
+			if (SDO.CANopenSDOWrite8_0.status == ERR_OK) { // (* OK *)
+				ParamWriteDone = 1;
+				SDO.step = SDO_WAIT_4_CMD; //(* next step *)
+			} else if (SDO.CANopenSDOWrite8_0.status == ERR_FUB_BUSY) { // (* FBK not yet finished *)
+				//(* busy *)
+			} else { // (* Error step *)
+				//	SDO.step = 10;
+			}
+			break;	
+		
 		}
 	
 		// If servo drive module is not OK, get ready to write servo parameters again
@@ -203,6 +251,8 @@ void _CYCLIC ProgramCyclic(void)
 			SERVO.DisableOperation = 1;
 		}
 	
+	//if (Fault_state()) SERVO.step = FAULT;
+	
 		// ============== STATE MACHINE FOR SERVO DRIVE CONTROL ==============================
 		switch(SERVO.step) {
 		
@@ -219,9 +269,9 @@ void _CYCLIC ProgramCyclic(void)
 			
 				IOControlWord = 0; //Disable voltage command
 			
-				if (Ready_to_switch_on_disabled_state()) { //0bxxxx xxxx x1xx 0000 (592 decimalne)
+				if (Ready_to_switch_on_disabled_state())  //0bxxxx xxxx x1xx 0000 (592 decimalne)
 					SERVO.step = SERVO_SWITCH_ON_DISABLED;
-				}
+
 				break;
 		
 			case SERVO_SWITCH_ON_DISABLED:
@@ -275,6 +325,15 @@ void _CYCLIC ProgramCyclic(void)
 				}
 				
 				break;	
+		
+			case FAULT:
+			
+				IOControlWord = 128; //reset fault
+			
+				if (!Fault_state())
+					SERVO.step = SERVO_FIRST_STEP;
+			
+				break;
 		}
 	
 		// Reset commands

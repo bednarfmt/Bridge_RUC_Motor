@@ -1,27 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.12.4.107 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
-  <Module Name="EVE-XCR-C" Type="FBC.0x29C.46342145" Version="1.153" OrderNumber="EVE-XCR-C">
+  <Module Name="CAP-NET-C1" Type="FBC.0x29C.57745401" Version="1.153" OrderNumber="CAP-NET-C1">
     <Connection Connector="CAN1" TargetModule="X90CP172_24_00" TargetConnector="IF8" NodeNumber="32" />
-    <Parameter ID="p200f_connecttomaster" Value="4" />
-    <Parameter ID="p2015_connecttomaster" Value="2" />
-    <Parameter ID="p2076_connecttomaster" Value="1" />
-    <Parameter ID="p2100_parametervalue" Value="6.7" />
-    <Parameter ID="p21dc_parametervalue" Value="0.015" />
-    <Parameter ID="p21e0_parametervalue" Value="1.3" />
-    <Parameter ID="p250a_connecttomaster" Value="3" />
-    <Parameter ID="p250a_parametervalue" Value="2.15" />
-    <Parameter ID="p250b_connecttomaster" Value="3" />
-    <Parameter ID="p250b_parametervalue" Value="160.8" />
-    <Parameter ID="p250e_parametervalue" Value="14" />
-    <Parameter ID="p250f_parametervalue" Value="-14" />
-    <Parameter ID="p2511_parametervalue" Value="0.000454" />
-    <Parameter ID="p5e49_connecttomaster" Value="3" />
-    <Parameter ID="p6061_connecttomaster" Value="0" />
-    <Parameter ID="p6064_connecttomaster" Value="0" />
-    <Parameter ID="p606c_connecttomaster" Value="2" />
-    <Parameter ID="p607a_connecttomaster" Value="0" />
-    <Parameter ID="p60ff_connecttomaster" Value="1" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="p200f_connecttomaster" Value="3" />
+    <Parameter ID="p2360_connecttomaster" Value="6" />
+    <Parameter ID="p2360_objflags" Value="1" />
+    <Parameter ID="p2388_connecttomaster" Value="7" />
+    <Parameter ID="p2388_objflags" Value="1" />
     <Parameter ID="pheartbeat_producertime" Value="1000" />
     <Parameter ID="p1003_objflags" Value="1" />
     <Parameter ID="p1003sub0_objflags" Value="1" />
@@ -33,14 +20,15 @@
     <Parameter ID="p1012_objflags" Value="1" />
     <Parameter ID="p1014_objflags" Value="1" />
     <Parameter ID="p1018_objflags" Value="1" />
+    <Parameter ID="p1029_objflags" Value="1" />
+    <Parameter ID="p1029sub1_objflags" Value="1" />
     <Parameter ID="p1200_objflags" Value="1" />
     <Parameter ID="p1200sub0_objflags" Value="1" />
-    <Parameter ID="p1f50_objflags" Value="1" />
-    <Parameter ID="p1f50sub1_objflags" Value="1" />
     <Parameter ID="p1f51_objflags" Value="1" />
     <Parameter ID="p1f51sub1_objflags" Value="1" />
     <Parameter ID="p1f56_objflags" Value="1" />
     <Parameter ID="p1f57_objflags" Value="1" />
+    <Parameter ID="p2100_parametervalue" Value="6.7" />
     <Parameter ID="p2101_parametervalue" Value="20" />
     <Parameter ID="p2101_objflags" Value="1" />
     <Parameter ID="p2102_parametervalue" Value="3000" />
@@ -69,21 +57,32 @@
     <Parameter ID="p2127_objflags" Value="1" />
     <Parameter ID="p2128_objflags" Value="1" />
     <Parameter ID="p2129_objflags" Value="1" />
+    <Parameter ID="p212b_objflags" Value="1" />
+    <Parameter ID="p212c_objflags" Value="1" />
+    <Parameter ID="p212d_objflags" Value="1" />
+    <Parameter ID="p212e_objflags" Value="1" />
+    <Parameter ID="p212f_objflags" Value="1" />
+    <Parameter ID="p2130_objflags" Value="1" />
+    <Parameter ID="p2131_objflags" Value="1" />
+    <Parameter ID="p2134_objflags" Value="1" />
     <Parameter ID="p214f_objflags" Value="1" />
     <Parameter ID="p2150_objflags" Value="1" />
     <Parameter ID="p2151_parametervalue" Value="1" />
     <Parameter ID="p2151_objflags" Value="1" />
+    <Parameter ID="p2152_objflags" Value="1" />
     <Parameter ID="p2153_parametervalue" Value="1" />
     <Parameter ID="p2153_objflags" Value="1" />
     <Parameter ID="p2154_objflags" Value="1" />
     <Parameter ID="p2155_parametervalue" Value="5.36" />
     <Parameter ID="p2155_objflags" Value="1" />
-    <Parameter ID="p2156_parametervalue" Value="1000" />
     <Parameter ID="p2156_objflags" Value="1" />
     <Parameter ID="p2157_objflags" Value="1" />
     <Parameter ID="p217b_objflags" Value="1" />
     <Parameter ID="p217c_objflags" Value="1" />
+    <Parameter ID="p21c0_objflags" Value="1" />
     <Parameter ID="p21c8_objflags" Value="1" />
+    <Parameter ID="p21dc_parametervalue" Value="0.015" />
+    <Parameter ID="p21e0_parametervalue" Value="1.3" />
     <Parameter ID="p21e8_parametervalue" Value="10" />
     <Parameter ID="p21e8_objflags" Value="1" />
     <Parameter ID="p21f1_objflags" Value="1" />
@@ -93,29 +92,17 @@
     <Parameter ID="p21f5_objflags" Value="1" />
     <Parameter ID="p21f6_objflags" Value="1" />
     <Parameter ID="p21f7_objflags" Value="1" />
-    <Parameter ID="p21fb_objflags" Value="1" />
-    <Parameter ID="p21fc_objflags" Value="1" />
-    <Parameter ID="p21fd_objflags" Value="1" />
-    <Parameter ID="p21fe_objflags" Value="1" />
-    <Parameter ID="p21ff_objflags" Value="1" />
-    <Parameter ID="p2200_objflags" Value="1" />
-    <Parameter ID="p2201_objflags" Value="1" />
-    <Parameter ID="p2202_objflags" Value="1" />
-    <Parameter ID="p2203_objflags" Value="1" />
     <Parameter ID="p22e8_objflags" Value="1" />
     <Parameter ID="p22e9_objflags" Value="1" />
-    <Parameter ID="p2360_parametervalue" Value="1" />
-    <Parameter ID="p2360_objflags" Value="1" />
-    <Parameter ID="p2361_parametervalue" Value="1" />
+    <Parameter ID="p22ec_objflags" Value="1" />
+    <Parameter ID="p22ed_objflags" Value="1" />
     <Parameter ID="p2361_objflags" Value="1" />
-    <Parameter ID="p2362_parametervalue" Value="1" />
     <Parameter ID="p2362_objflags" Value="1" />
     <Parameter ID="p2364_objflags" Value="1" />
     <Parameter ID="p236f_objflags" Value="1" />
     <Parameter ID="p2370_parametervalue" Value="29" />
     <Parameter ID="p2370_objflags" Value="1" />
     <Parameter ID="p2371_objflags" Value="1" />
-    <Parameter ID="p2372_objflags" Value="1" />
     <Parameter ID="p2373_objflags" Value="1" />
     <Parameter ID="p2374_objflags" Value="1" />
     <Parameter ID="p2375_parametervalue" Value="18" />
@@ -126,7 +113,6 @@
     <Parameter ID="p2377_objflags" Value="1" />
     <Parameter ID="p2378_objflags" Value="1" />
     <Parameter ID="p2379_objflags" Value="1" />
-    <Parameter ID="p237a_objflags" Value="1" />
     <Parameter ID="p237b_objflags" Value="1" />
     <Parameter ID="p237c_objflags" Value="1" />
     <Parameter ID="p237d_objflags" Value="1" />
@@ -138,14 +124,18 @@
     <Parameter ID="p2385_objflags" Value="1" />
     <Parameter ID="p2386_objflags" Value="1" />
     <Parameter ID="p2387_objflags" Value="1" />
-    <Parameter ID="p2388_objflags" Value="1" />
     <Parameter ID="p2389_objflags" Value="1" />
     <Parameter ID="p238a_objflags" Value="1" />
+    <Parameter ID="p238c_objflags" Value="1" />
+    <Parameter ID="p238d_objflags" Value="1" />
+    <Parameter ID="p238e_objflags" Value="1" />
     <Parameter ID="p2390_objflags" Value="1" />
     <Parameter ID="p2391_objflags" Value="1" />
     <Parameter ID="p2392_objflags" Value="1" />
     <Parameter ID="p2394_objflags" Value="1" />
     <Parameter ID="p2395_objflags" Value="1" />
+    <Parameter ID="p2398_objflags" Value="1" />
+    <Parameter ID="p2399_objflags" Value="1" />
     <Parameter ID="p2400_objflags" Value="1" />
     <Parameter ID="p2401_objflags" Value="1" />
     <Parameter ID="p2403_objflags" Value="1" />
@@ -157,26 +147,37 @@
     <Parameter ID="p2439_objflags" Value="1" />
     <Parameter ID="p243a_objflags" Value="1" />
     <Parameter ID="p243b_objflags" Value="1" />
+    <Parameter ID="p243c_objflags" Value="1" />
+    <Parameter ID="p2440_objflags" Value="1" />
+    <Parameter ID="p2441_objflags" Value="1" />
+    <Parameter ID="p2443_objflags" Value="1" />
+    <Parameter ID="p2444_objflags" Value="1" />
+    <Parameter ID="p2445_objflags" Value="1" />
+    <Parameter ID="p2447_objflags" Value="1" />
     <Parameter ID="p2450_objflags" Value="1" />
     <Parameter ID="p2452_objflags" Value="1" />
     <Parameter ID="p2455_objflags" Value="1" />
     <Parameter ID="p2456_objflags" Value="1" />
     <Parameter ID="p2457_objflags" Value="1" />
-    <Parameter ID="p2460_objflags" Value="1" />
-    <Parameter ID="p2461_objflags" Value="1" />
-    <Parameter ID="p2462_objflags" Value="1" />
     <Parameter ID="p24ff_objflags" Value="1" />
     <Parameter ID="p2500_parametervalue" Value="1.5" />
+    <Parameter ID="p2500_objflags" Value="1" />
     <Parameter ID="p2501_parametervalue" Value="786" />
+    <Parameter ID="p2501_objflags" Value="1" />
     <Parameter ID="p2502_objflags" Value="1" />
     <Parameter ID="p2503_objflags" Value="1" />
-    <Parameter ID="p2504_objflags" Value="1" />
     <Parameter ID="p2505_parametervalue" Value="1.5" />
     <Parameter ID="p2505_objflags" Value="1" />
     <Parameter ID="p2506_parametervalue" Value="786" />
+    <Parameter ID="p2506_objflags" Value="1" />
     <Parameter ID="p2507_objflags" Value="1" />
     <Parameter ID="p2508_objflags" Value="1" />
-    <Parameter ID="p2509_objflags" Value="1" />
+    <Parameter ID="p250a_parametervalue" Value="2.15" />
+    <Parameter ID="p250b_parametervalue" Value="160.8" />
+    <Parameter ID="p250e_parametervalue" Value="14" />
+    <Parameter ID="p250f_parametervalue" Value="-14" />
+    <Parameter ID="p2510_objflags" Value="1" />
+    <Parameter ID="p2511_parametervalue" Value="0.000454" />
     <Parameter ID="p251b_objflags" Value="1" />
     <Parameter ID="p251c_objflags" Value="1" />
     <Parameter ID="p2521_objflags" Value="1" />
@@ -239,7 +240,6 @@
     <Parameter ID="p2609_objflags" Value="1" />
     <Parameter ID="p260a_objflags" Value="1" />
     <Parameter ID="p260b_objflags" Value="1" />
-    <Parameter ID="p260d_objflags" Value="1" />
     <Parameter ID="p260f_objflags" Value="1" />
     <Parameter ID="p2610_objflags" Value="1" />
     <Parameter ID="p2611_objflags" Value="1" />
@@ -249,11 +249,9 @@
     <Parameter ID="p2615_objflags" Value="1" />
     <Parameter ID="p2616_objflags" Value="1" />
     <Parameter ID="p2617_objflags" Value="1" />
-    <Parameter ID="p2618_objflags" Value="1" />
     <Parameter ID="p2619_objflags" Value="1" />
     <Parameter ID="p261a_objflags" Value="1" />
     <Parameter ID="p261b_objflags" Value="1" />
-    <Parameter ID="p261c_objflags" Value="1" />
     <Parameter ID="p261d_objflags" Value="1" />
     <Parameter ID="p2620_objflags" Value="1" />
     <Parameter ID="p2621_objflags" Value="1" />
@@ -264,8 +262,8 @@
     <Parameter ID="p2631_objflags" Value="1" />
     <Parameter ID="p2632_objflags" Value="1" />
     <Parameter ID="p2633_objflags" Value="1" />
+    <Parameter ID="p263b_objflags" Value="1" />
     <Parameter ID="p2641_objflags" Value="1" />
-    <Parameter ID="p2642_objflags" Value="1" />
     <Parameter ID="p2643_objflags" Value="1" />
     <Parameter ID="p2644_objflags" Value="1" />
     <Parameter ID="p2645_objflags" Value="1" />
@@ -273,27 +271,76 @@
     <Parameter ID="p264e_objflags" Value="1" />
     <Parameter ID="p26db_objflags" Value="1" />
     <Parameter ID="p26dc_objflags" Value="1" />
-    <Parameter ID="p26dd_objflags" Value="1" />
     <Parameter ID="p26df_objflags" Value="1" />
     <Parameter ID="p26e4_objflags" Value="1" />
-    <Parameter ID="p26e5_objflags" Value="1" />
     <Parameter ID="p2743_objflags" Value="1" />
-    <Parameter ID="p5820_objflags" Value="1" />
-    <Parameter ID="p5820sub1_objflags" Value="1" />
-    <Parameter ID="p5820sub2_objflags" Value="1" />
-    <Parameter ID="p5820sub3_objflags" Value="1" />
+    <Parameter ID="p5890_objflags" Value="1" />
+    <Parameter ID="p5891_objflags" Value="1" />
+    <Parameter ID="p5892_objflags" Value="1" />
+    <Parameter ID="p5893_objflags" Value="1" />
+    <Parameter ID="p5894_objflags" Value="1" />
+    <Parameter ID="p5895_objflags" Value="1" />
+    <Parameter ID="p5896_objflags" Value="1" />
+    <Parameter ID="p5897_objflags" Value="1" />
+    <Parameter ID="p5898_objflags" Value="1" />
+    <Parameter ID="p5899_objflags" Value="1" />
+    <Parameter ID="p589a_objflags" Value="1" />
+    <Parameter ID="p589b_objflags" Value="1" />
+    <Parameter ID="p589c_objflags" Value="1" />
+    <Parameter ID="p589d_objflags" Value="1" />
+    <Parameter ID="p589e_objflags" Value="1" />
+    <Parameter ID="p589f_objflags" Value="1" />
+    <Parameter ID="p58a1_objflags" Value="1" />
+    <Parameter ID="p58a2_objflags" Value="1" />
+    <Parameter ID="p58a3_objflags" Value="1" />
+    <Parameter ID="p58a4_objflags" Value="1" />
     <Parameter ID="p58aa_objflags" Value="1" />
+    <Parameter ID="p58b4_objflags" Value="1" />
+    <Parameter ID="p58bc_objflags" Value="1" />
+    <Parameter ID="p58bd_objflags" Value="1" />
+    <Parameter ID="p58c0_objflags" Value="1" />
+    <Parameter ID="p58c1_objflags" Value="1" />
+    <Parameter ID="p58c2_objflags" Value="1" />
+    <Parameter ID="p58c3_objflags" Value="1" />
+    <Parameter ID="p58c4_objflags" Value="1" />
+    <Parameter ID="p58c5_objflags" Value="1" />
+    <Parameter ID="p58c7_objflags" Value="1" />
+    <Parameter ID="p58d0_objflags" Value="1" />
+    <Parameter ID="p58d1_objflags" Value="1" />
+    <Parameter ID="p58d2_objflags" Value="1" />
+    <Parameter ID="p58d3_objflags" Value="1" />
+    <Parameter ID="p58d4_objflags" Value="1" />
+    <Parameter ID="p58d5_objflags" Value="1" />
+    <Parameter ID="p58d6_objflags" Value="1" />
+    <Parameter ID="p58d7_objflags" Value="1" />
+    <Parameter ID="p58d8_objflags" Value="1" />
+    <Parameter ID="p58da_objflags" Value="1" />
+    <Parameter ID="p58db_objflags" Value="1" />
+    <Parameter ID="p58dc_objflags" Value="1" />
+    <Parameter ID="p58dd_objflags" Value="1" />
+    <Parameter ID="p58de_objflags" Value="1" />
+    <Parameter ID="p58df_objflags" Value="1" />
+    <Parameter ID="p58e3_objflags" Value="1" />
+    <Parameter ID="p58e8_objflags" Value="1" />
+    <Parameter ID="p58ea_objflags" Value="1" />
+    <Parameter ID="p58eb_objflags" Value="1" />
+    <Parameter ID="p58f0_objflags" Value="1" />
+    <Parameter ID="p58f1_objflags" Value="1" />
+    <Parameter ID="p58f3_objflags" Value="1" />
+    <Parameter ID="p58f4_objflags" Value="1" />
+    <Parameter ID="p58f5_objflags" Value="1" />
+    <Parameter ID="p58f7_objflags" Value="1" />
     <Parameter ID="p5e4b_objflags" Value="1" />
     <Parameter ID="p5e4e_objflags" Value="1" />
-    <Parameter ID="p5e80_objflags" Value="1" />
-    <Parameter ID="p5ec5_objflags" Value="1" />
     <Parameter ID="p5edb_objflags" Value="1" />
     <Parameter ID="p5edc_objflags" Value="1" />
     <Parameter ID="p5ede_objflags" Value="1" />
+    <Parameter ID="p5edf_objflags" Value="1" />
     <Parameter ID="p5ee4_objflags" Value="1" />
     <Parameter ID="p6007_objflags" Value="1" />
     <Parameter ID="p605a_objflags" Value="1" />
     <Parameter ID="p605d_objflags" Value="1" />
+    <Parameter ID="p6076_objflags" Value="1" />
     <Parameter ID="p607b_objflags" Value="1" />
     <Parameter ID="p607d_objflags" Value="1" />
     <Parameter ID="p6098_objflags" Value="1" />
