@@ -1,3 +1,8 @@
 VAR_CONFIG
-	::ServoCtrl:ServoDriveModuleOK AT %IX."CAP-NET-C1".ModuleOk;
+	::ServoCtrl:ServoDriveModuleOK AT %IX."CAP-NET-C4".ModuleOk;
+	::ServoCtrl:IOControlWord AT %QW."CAP-NET-C4".ControlWord_6040;
+	::ServoCtrl:IOStatusWord AT %IW."CAP-NET-C4".StatusWord_6041;
+	::ServoCtrl:IOActualVelocity AT %ID."CAP-NET-C4".ActualVelocity_606C;
+	::ServoCtrl:IOVelocitySetpoint AT %QD."CAP-NET-C4".VelocitySet_point_60FF;
+	::ServoCtrl:IOOperationMode AT %QB."CAP-NET-C4".OperationMode_6060;
 END_VAR
